@@ -1,4 +1,4 @@
-NGX_VERSION = 1.0.4
+NGX_VERSION = 1.1.5
 HOME = ${CURDIR}
 NGX_DIST = nginx-${NGX_VERSION}.tar.gz
 NGX_DIR = ${CURDIR}/nginx-${NGX_VERSION}
@@ -21,7 +21,7 @@ demo: kill clean_logs build configs
 	@${NGX_BIN}
 	@echo
 	@echo Sending simple request with body: \"Client request body\":
-	
+
 	curl http://127.0.0.1:3000/ -d "Client request body" -D -
 	@echo
 	@echo
